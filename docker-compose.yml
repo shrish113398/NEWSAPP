@@ -2,18 +2,20 @@ version: '3'
 services:
   frontend:
     build:
-      context: ./frontend
+      context: ./react-demo  # Update to match the path of your frontend app
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    links:
-      - server
-    depends_on:
-      - server
-
-  server:
-    build:
-      context: ./server
-    ports:
-      - "5000:5000"
+      - "3000:3000"  # Map the container's port 3000 to the host's port 3000
     volumes:
-      - ./server:/app
+      - ./react-demo:/app  # Mount the frontend code into the container
+    depends_on:
+      - backend  # Make sure the backend service is available before starting the frontend
+
+  backend:
+    build:
+      context: ./backend  # Update to match the path of your backend app
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"  # Map the container's port 5000 to the host's port 5000
+    volumes:
+      - ./backend:/app  # Mount the backend code into the container
