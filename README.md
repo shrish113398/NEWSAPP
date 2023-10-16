@@ -1,6 +1,7 @@
 # NEWSAPP
 
 The content has been updated in the master branch 
+
 The app has been made using nodejs express and react js
 
 client and server-side has been bifurcated for modularisation
@@ -21,7 +22,7 @@ I have implemented:
 4. Not much work has been done on the design part (will be updated eventually)
 
 Dockerization has been done 
-would share the link : (here)
+would share the link : https://newtanixx.azurewebsites.net/
 after deployment
 
 
