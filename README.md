@@ -22,8 +22,7 @@ I have implemented:
 4. Not much work has been done on the design part (will be updated eventually)
 
 Dockerization has been done 
-would share the link : https://newtanixx.azurewebsites.net/
-after deployment
+link : https://newtanixx.azurewebsites.net/
 
 
 Cheers !!
